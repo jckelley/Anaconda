@@ -1,0 +1,38 @@
+{
+  "manifest_version": 2,
+  "name": "Anaconda",
+  "description": "Amazon Search Enhancer",
+  "version": "1.0",
+  "page_action": {
+    "default_icon": "icon.png",
+    "default_title": "Anaconda",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [
+      "eventPage.js"
+    ],
+    "persistent": false
+  },
+  "permissions": [
+    "tabs",
+    "http://amazon.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.amazon.com/*"
+      ],
+      "js": [
+        "amazon_cs.js",
+        "jquery-1.12.3.js"
+      ],
+      "css": [
+        "amazon_cs.css"
+      ]
+    }
+  ]
+}
+
+
+
