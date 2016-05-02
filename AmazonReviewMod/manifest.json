@@ -10,7 +10,7 @@
   },
   "background": {
     "scripts": [
-      "eventPage.js"
+      "js/eventPage.js"
     ],
     "persistent": false
   },
@@ -24,11 +24,11 @@
         "http://www.amazon.com/*"
       ],
       "js": [
-        "amazon_cs.js",
-        "jquery-1.12.3.js"
+        "js/amazon_cs.js",
+        "js/jquery-1.12.3.js"
       ],
       "css": [
-        "amazon_cs.css"
+        "css/amazon_cs.css"
       ]
     }
   ]
